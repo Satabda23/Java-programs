@@ -1,0 +1,25 @@
+
+public class armstrong{
+    static void armstrong(int num){
+        int remainder;
+        int temp;
+        int n = 0;
+
+        temp = num;
+        while(temp!=0){
+            remainder = temp % 10;
+            n = n + remainder * remainder * remainder;
+            temp = temp/10;
+        }
+
+        if(n==num){
+            System.out.println("it is an armstrong number");
+        }
+        else{
+            System.out.println("it is not an armstrongn number");
+        }
+    }
+    public static void main(String[] args) {
+        armstrong(371);
+    }
+}
